@@ -30,7 +30,7 @@ public class ViajeFamiliar extends Viaje{
     @Override
     public String descripcion()
     {
-        return "Aquí devuelve la descripcion";
+        return "Aquí devuelve la descripcion de ViajeFamiliar";
     }
     
     public void setFamilia(int prmFamilia)
