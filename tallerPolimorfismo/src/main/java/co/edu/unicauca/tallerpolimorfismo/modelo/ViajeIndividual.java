@@ -5,10 +5,26 @@
  */
 package co.edu.unicauca.tallerpolimorfismo.modelo;
 
+import java.util.Date;
+
 /**
  *
  * @author Personal
  */
-public class ViajeIndividual {
+public class ViajeIndividual extends Viaje{
     
+    public ViajeIndividual(String prmOrigen, String prmDestino, int prmCosto, Date prmFechaSalida, Date prmFechaLlegda)
+    {
+        atrOrigen = prmOrigen;
+        atrDestino = prmDestino;
+        atrCosto = prmCosto;
+        atrFechaSalida = prmFechaSalida;
+        atrFechaLlegada = prmFechaLlegada;
+    }
+
+    @Override
+    public String descripcion() 
+    {
+        return "Aquí se devuelve la descripción para ViajeIndividual";
+    }
 }

@@ -17,7 +17,14 @@ public class ViajeFamiliar extends Viaje{
     private int atrFamilia;
     
     public ViajeFamiliar(String prmOrigen, String prmLlegada, int prmCosto, Date prmFechaSalida, Date prmFechaLlegada, int prmFamilia)
-    {}
+    {
+        atrOrigen = prmOrigen;
+        atrDestino = prmDestino;
+        atrCosto = prmCosto;
+        atrFechaSalida = prmFechaSalida;
+        atrFechaLlegada = prmFechaLlegada;
+        atrFamilia = prmFamilia;
+    }
     
     @Override
     public String descripcion()
