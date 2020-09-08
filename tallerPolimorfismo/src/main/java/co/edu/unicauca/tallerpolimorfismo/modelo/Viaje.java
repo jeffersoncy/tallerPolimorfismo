@@ -19,7 +19,8 @@ public abstract class Viaje {
     protected Date atrFechaSalida;
     protected Date atrFechaLlegada;
     
-    public Viaje(String pOrigen, String pDestino, int pCosto, Date pFechaLlegada, Date pFechaSalida){
+    public Viaje(String pOrigen, String pDestino, int pCosto, Date pFechaLlegada, Date pFechaSalida)
+    {
         atrOrigen = pOrigen;
         atrDestino = pDestino;
         atrCosto = pCosto;
@@ -98,5 +99,9 @@ public abstract class Viaje {
     }
     
     public abstract String descripcion();
+    
+    public abstract String cualquierMetodo();
+    
+    public abstract String cualquierMetodo2();
     
 }
