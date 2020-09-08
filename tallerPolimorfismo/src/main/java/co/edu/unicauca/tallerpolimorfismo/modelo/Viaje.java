@@ -13,15 +13,18 @@ import java.util.Date;
  */
 public abstract class Viaje {
     
-    private String atrOrigen;
-    private String atrDestino;
-    private int atrCosto;
-    private Date atrFechaSalida;
-    private Date atrFechaLlegada;
-//Constructor: cuando se cree un objeto taxi se ejecutará el código que incluyamos en el constructor
+    protected String atrOrigen;
+    protected String atrDestino;
+    protected int atrCosto;
+    protected Date atrFechaSalida;
+    protected Date atrFechaLlegada;
     
-    public Viaje(String pOrigen, String pDestino, int pCosto ){
+    public Viaje(String pOrigen, String pDestino, int pCosto, Date pFechaLlegada, Date pFechaSalida){
         atrOrigen = pOrigen;
+        atrDestino = pDestino;
+        atrCosto = pCosto;
+        atrFechaLlegada = pFechaLlegada;
+        atrFechaSalida = pFechaSalida;
     }
     /**
      * @return the atrOrigen
