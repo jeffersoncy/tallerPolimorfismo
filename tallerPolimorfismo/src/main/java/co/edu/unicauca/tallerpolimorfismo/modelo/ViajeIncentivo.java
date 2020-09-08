@@ -14,6 +14,15 @@ import java.util.Date;
 public class ViajeIncentivo extends Viaje {
     private String atrEmpresa;
     
+    /**
+     *
+     * @param prmOrigen
+     * @param prmDestino
+     * @param prmCosto
+     * @param prmFechaSalida
+     * @param prmFechaLlegada
+     * @param prmEmpresa
+     */
     public ViajeIncentivo(String prmOrigen, String prmDestino, int prmCosto, Date prmFechaSalida, Date prmFechaLlegada,String prmEmpresa){
         super(prmOrigen, prmDestino, prmCosto, prmFechaSalida, prmFechaLlegada);
         atrOrigen = prmOrigen;
