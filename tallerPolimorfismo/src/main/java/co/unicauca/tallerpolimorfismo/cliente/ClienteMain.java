@@ -63,11 +63,11 @@ public class ClienteMain {
         
         for(Viaje viaje : viajes)
         {
-            System.out.println("Origen: " + viaje.getAtrOrigen());
-            System.out.println("Destino: " + viaje.getAtrDestino());
-            System.out.println("Fecha salida: " + viaje.getAtrFechaSalida());
-            System.out.println("Fecha llegada: " + viaje.getAtrFechaLlegada());
-            System.out.println("Costo: " + viaje.getAtrCosto());
+            System.out.println("Origen: " + viaje.getOrigen());
+            System.out.println("Destino: " + viaje.getDestino());
+            System.out.println("Fecha salida: " + viaje.getFechaSalida());
+            System.out.println("Fecha llegada: " + viaje.getFechaLlegada());
+            System.out.println("Costo: " + viaje.getCosto());
             System.out.println("Descripcion: " + viaje.descripcion());
             System.out.println("Cualquier metodo: " + viaje.cualquierMetodo());
             System.out.println("Cualquier metodo 2: " + viaje.cualquierMetodo2());
