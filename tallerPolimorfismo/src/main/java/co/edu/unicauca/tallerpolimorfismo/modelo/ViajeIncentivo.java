@@ -5,10 +5,49 @@
  */
 package co.edu.unicauca.tallerpolimorfismo.modelo;
 
+import java.util.Date;
+
 /**
  *
  * @author Personal
  */
-public class ViajeIncentivo {
+public class ViajeIncentivo extends Viaje {
+    private String atrEmpresa;
+
+    public ViajeIncentivo(String prmOrigen, String prmDestino, int prmCosto, Date prmFechaSalida, Date prmFechaLlegada,String prmEmpresa){
+        super(prmOrigen, prmDestino, prmCosto, prmFechaSalida, prmFechaLlegada);
+        atrOrigen = prmOrigen;
+        atrDestino = prmDestino;
+        atrCosto = prmCosto;
+        atrFechaSalida = prmFechaSalida;
+        atrFechaLlegada = prmFechaLlegada;
+        atrEmpresa = prmEmpresa;
+    };
+    
+    /**
+     * @return the atrEmpresa
+     */
+    public String getAtrEmpresa() {
+        return atrEmpresa;
+    }
+
+    /**
+     * @param atrEmpresa the atrEmpresa to set
+     */
+    public void setAtrEmpresa(String atrEmpresa) {
+        this.atrEmpresa = atrEmpresa;
+    }
+    
+    @Override
+    public String descripcion() {
+        return "Aquí se devuelve la descripción para ViajeIncentivo";
+    }
+
+    @Override
+    public String cualquierMetodo2() {
+        return "Aquí devuelve cualquierMetodo2 en ViajeIncentivo";
+    }
+
+    
     
 }
