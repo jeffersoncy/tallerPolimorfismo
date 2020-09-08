@@ -62,8 +62,5 @@ public class ViajeIncentivo extends Viaje {
      */
     public String cualquierMetodo2() {
         return "Método implementado en la clase hija viaje de incentivo";
-    }
-
-    
-    
+    }    
 }

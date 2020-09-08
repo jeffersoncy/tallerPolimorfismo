@@ -9,10 +9,18 @@ import java.util.Date;
 
 /**
  *
- * @author Personal
+ * @author Jefferson Eduardo Campo, Fabián David Marín
  */
 public class ViajeIndividual extends Viaje{
     
+    /**
+     *
+     * @param prmOrigen
+     * @param prmDestino
+     * @param prmCosto
+     * @param prmFechaSalida
+     * @param prmFechaLlegada
+     */
     public ViajeIndividual(String prmOrigen, String prmDestino, int prmCosto, Date prmFechaSalida, Date prmFechaLlegada)
     {
         super(prmOrigen, prmDestino, prmCosto, prmFechaSalida, prmFechaLlegada);
@@ -23,6 +31,10 @@ public class ViajeIndividual extends Viaje{
         atrFechaLlegada = prmFechaLlegada;
     }
 
+    /**
+     * Método que sobreescribe la descripción de la clase hija viaje individual
+     * @return "Disfruta tu viaje individual"
+     */
     @Override
     public String descripcion() 
     {

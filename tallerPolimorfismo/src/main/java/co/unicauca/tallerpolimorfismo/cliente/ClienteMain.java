@@ -19,7 +19,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Personal
+ * @author Jefferson Eduardo Campo, Fabián David Marín
  */
 public class ClienteMain {
 
@@ -28,12 +28,20 @@ public class ClienteMain {
      */
     public static List<Viaje> viajes = new ArrayList();
     
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         
         leerViajes();
         mostrarViajes();
     }
 
+    /*Método que recibe datos en las instancias de las diferentes clases hija como tipo de 
+      dato de la clase padre, se gestiona el try-catch para garantizar la validez 
+      de los dos datos de las fechas.
+    */
     private static void leerViajes() {
         try
         {
@@ -63,6 +71,9 @@ public class ClienteMain {
         }   
     }
 
+    /*Muestra los datos guardados en las difirentes instancias de cada viaje 
+      por medio de un for: Origen, Destino, Fecha salida, Fecha llegada, Costo, Descripcion,
+      cualquier metodo y cualquier método 2.*/
     private static void mostrarViajes() {
         
         for(Viaje viaje : viajes)
@@ -78,5 +89,4 @@ public class ClienteMain {
             System.out.println("");
         }
     }
-    
 }
