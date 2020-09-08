@@ -18,8 +18,11 @@ public abstract class Viaje {
     private int atrCosto;
     private Date atrFechaSalida;
     private Date atrFechaLlegada;
-
+//Constructor: cuando se cree un objeto taxi se ejecutará el código que incluyamos en el constructor
     
+    public Viaje(String pOrigen, String pDestino, int pCosto ){
+        atrOrigen = pOrigen;
+    }
     /**
      * @return the atrOrigen
      */
@@ -90,4 +93,7 @@ public abstract class Viaje {
     public void setAtrFechaLlegada(Date atrFechaLlegada) {
         this.atrFechaLlegada = atrFechaLlegada;
     }
+    
+    public abstract String descripcion();
+    
 }
