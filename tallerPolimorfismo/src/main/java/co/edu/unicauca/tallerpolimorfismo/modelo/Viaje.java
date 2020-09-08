@@ -30,7 +30,7 @@ public abstract class Viaje {
     /**
      * @return the atrOrigen
      */
-    public String getAtrOrigen() {
+    public String getOrigen() {
         return atrOrigen;
     }
     
@@ -38,63 +38,63 @@ public abstract class Viaje {
     /**
      * @param atrOrigen the atrOrigen to set
      */
-    public void setAtrOrigen(String atrOrigen) {
+    public void setOrigen(String atrOrigen) {
         this.atrOrigen = atrOrigen;
     }
 
     /**
      * @return the atrDestino
      */
-    public String getAtrDestino() {
+    public String getDestino() {
         return atrDestino;
     }
 
     /**
      * @param atrDestino the atrDestino to set
      */
-    public void setAtrDestino(String atrDestino) {
+    public void setDestino(String atrDestino) {
         this.atrDestino = atrDestino;
     }
 
     /**
      * @return the atrCosto
      */
-    public int getAtrCosto() {
+    public int getCosto() {
         return atrCosto;
     }
 
     /**
      * @param atrCosto the atrCosto to set
      */
-    public void setAtrCosto(int atrCosto) {
+    public void setCosto(int atrCosto) {
         this.atrCosto = atrCosto;
     }
 
     /**
      * @return the atrFechaSalida
      */
-    public Date getAtrFechaSalida() {
+    public Date getFechaSalida() {
         return atrFechaSalida;
     }
 
     /**
      * @param atrFechaSalida the atrFechaSalida to set
      */
-    public void setAtrFechaSalida(Date atrFechaSalida) {
+    public void setFechaSalida(Date atrFechaSalida) {
         this.atrFechaSalida = atrFechaSalida;
     }
 
     /**
      * @return the atrFechaLlegada
      */
-    public Date getAtrFechaLlegada() {
+    public Date getFechaLlegada() {
         return atrFechaLlegada;
     }
 
     /**
      * @param atrFechaLlegada the atrFechaLlegada to set
      */
-    public void setAtrFechaLlegada(Date atrFechaLlegada) {
+    public void setFechaLlegada(Date atrFechaLlegada) {
         this.atrFechaLlegada = atrFechaLlegada;
     }
     

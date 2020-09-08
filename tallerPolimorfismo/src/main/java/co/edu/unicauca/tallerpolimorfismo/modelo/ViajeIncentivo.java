@@ -27,14 +27,14 @@ public class ViajeIncentivo extends Viaje {
     /**
      * @return the atrEmpresa
      */
-    public String getAtrEmpresa() {
+    public String getEmpresa() {
         return atrEmpresa;
     }
 
     /**
      * @param atrEmpresa the atrEmpresa to set
      */
-    public void setAtrEmpresa(String atrEmpresa) {
+    public void setEmpresa(String atrEmpresa) {
         this.atrEmpresa = atrEmpresa;
     }
     
