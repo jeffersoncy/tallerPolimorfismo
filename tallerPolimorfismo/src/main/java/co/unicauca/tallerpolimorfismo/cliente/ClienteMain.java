@@ -7,6 +7,9 @@ package co.unicauca.tallerpolimorfismo.cliente;
 
 import co.edu.unicauca.tallerpolimorfismo.modelo.Viaje;
 import co.edu.unicauca.tallerpolimorfismo.modelo.ViajeFamiliar;
+import co.edu.unicauca.tallerpolimorfismo.modelo.ViajeIncentivo;
+import co.edu.unicauca.tallerpolimorfismo.modelo.ViajeIndividual;
+import co.edu.unicauca.tallerpolimorfismo.modelo.ViajeTodoIncluido;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -39,20 +42,21 @@ public class ClienteMain {
                     new SimpleDateFormat("dd/MM/yyyy").parse("11/11/2015"), 4);
                     viajes.add(viaje1);
             
-            Viaje viaje2 = new ViajeFamiliar("Cali", "Bucaramanga", 250000, 
-                    new SimpleDateFormat("dd/MM/yyyy").parse("05/01/2016"), 
-                    new SimpleDateFormat("dd/MM/yyyy").parse("10/02/2016"), 6);
+            Viaje viaje2 = new ViajeIncentivo("Popayán", "Medellin", 2100000, 
+                    new SimpleDateFormat("dd/MM/yyyy").parse("03/06/2019"), 
+                    new SimpleDateFormat("dd/MM/yyyy").parse("09/06/2019"), "Emtel");
                     viajes.add(viaje2);
              
-            Viaje viaje3 = new ViajeFamiliar("Pasto", "Popayan", 60000, 
-                    new SimpleDateFormat("dd/MM/yyyy").parse("01/03/2018"), 
-                    new SimpleDateFormat("dd/MM/yyyy").parse("20/03/2018"), 5);
+            Viaje viaje3 = new ViajeIndividual("Popayán", "San Andres", 4250000, 
+                    new SimpleDateFormat("dd/MM/yyyy").parse("01/07/2019"), 
+                    new SimpleDateFormat("dd/MM/yyyy").parse("12/07/2019"));
                     viajes.add(viaje3);
-             
-            Viaje viaje4 = new ViajeFamiliar("Bogota", "Mitu", 1500000, 
-                    new SimpleDateFormat("dd/MM/yyyy").parse("03/12/2019"), 
-                    new SimpleDateFormat("dd/MM/yyyy").parse("17/01/2020"), 9);
+                    
+            Viaje viaje4 = new ViajeTodoIncluido("Popayán", "Cartagena", 7350000, 
+                    new SimpleDateFormat("dd/MM/yyyy").parse("01/07/2019"), 
+                    new SimpleDateFormat("dd/MM/yyyy").parse("12/07/2019"));
                     viajes.add(viaje4);
+                    
         }catch(ParseException ex)
         {
             Logger.getLogger(ClienteMain.class.getName()).log(Level.SEVERE, null, ex);
