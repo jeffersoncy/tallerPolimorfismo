@@ -100,7 +100,10 @@ public abstract class Viaje {
     
     public abstract String descripcion();
     
-    public abstract String cualquierMetodo();
+    public String cualquierMetodo()
+    {
+        return "Cualquier método implementado en la clase base";
+    }
     
     public abstract String cualquierMetodo2();
     
