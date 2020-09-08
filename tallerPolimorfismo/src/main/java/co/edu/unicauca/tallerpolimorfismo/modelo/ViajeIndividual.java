@@ -13,7 +13,7 @@ import java.util.Date;
  */
 public class ViajeIndividual extends Viaje{
     
-    public ViajeIndividual(String prmOrigen, String prmDestino, int prmCosto, Date prmFechaSalida, Date prmFechaLlegda)
+    public ViajeIndividual(String prmOrigen, String prmDestino, int prmCosto, Date prmFechaSalida, Date prmFechaLlegada)
     {
         atrOrigen = prmOrigen;
         atrDestino = prmDestino;

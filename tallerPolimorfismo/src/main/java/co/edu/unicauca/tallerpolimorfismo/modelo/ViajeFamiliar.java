@@ -19,7 +19,7 @@ public class ViajeFamiliar extends Viaje{
     public ViajeFamiliar(String prmOrigen, String prmLlegada, int prmCosto, Date prmFechaSalida, Date prmFechaLlegada, int prmFamilia)
     {
         atrOrigen = prmOrigen;
-        atrDestino = prmDestino;
+        atrDestino = prmLlegada;
         atrCosto = prmCosto;
         atrFechaSalida = prmFechaSalida;
         atrFechaLlegada = prmFechaLlegada;
