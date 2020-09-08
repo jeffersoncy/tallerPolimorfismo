@@ -43,9 +43,8 @@ public class ViajeIncentivo extends Viaje {
         return "Viaje incentivo que te la envia a la empresa "+atrEmpresa;
     }
 
-    @Override
     public String cualquierMetodo2() {
-        return "Meétodo implementado en la clase hija viaje de incentivo";
+        return "Método implementado en la clase hija viaje de incentivo";
     }
 
     
