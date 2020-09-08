@@ -15,6 +15,7 @@ public class ViajeIndividual extends Viaje{
     
     public ViajeIndividual(String prmOrigen, String prmDestino, int prmCosto, Date prmFechaSalida, Date prmFechaLlegada)
     {
+        super(prmOrigen, prmDestino, prmCosto, prmFechaSalida, prmFechaLlegada);
         atrOrigen = prmOrigen;
         atrDestino = prmDestino;
         atrCosto = prmCosto;
@@ -26,5 +27,11 @@ public class ViajeIndividual extends Viaje{
     public String descripcion() 
     {
         return "Aquí se devuelve la descripción para ViajeIndividual";
+    }
+    
+    @Override
+    public String cualquierMetodo2()
+    {
+        return "Aquí devuelve cualquierMetodo2 en ViajeIndividual";
     }
 }

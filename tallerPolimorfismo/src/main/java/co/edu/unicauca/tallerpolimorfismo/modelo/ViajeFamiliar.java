@@ -18,6 +18,7 @@ public class ViajeFamiliar extends Viaje{
     
     public ViajeFamiliar(String prmOrigen, String prmLlegada, int prmCosto, Date prmFechaSalida, Date prmFechaLlegada, int prmFamilia)
     {
+        super(prmOrigen, prmLlegada, prmCosto, prmFechaSalida, prmFechaLlegada);
         atrOrigen = prmOrigen;
         atrDestino = prmLlegada;
         atrCosto = prmCosto;
@@ -42,8 +43,9 @@ public class ViajeFamiliar extends Viaje{
         return atrFamilia;
     }
     
+    @Override
     public String cualquierMetodo2()
     {
-        return "Aquí devuelve cualquierMetodo2";
+        return "Aquí devuelve cualquierMetodo2 en ViajeFamiliar";
     }
 }
