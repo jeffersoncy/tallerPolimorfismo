@@ -40,12 +40,12 @@ public class ViajeIncentivo extends Viaje {
     
     @Override
     public String descripcion() {
-        return "Aquí se devuelve la descripción para ViajeIncentivo";
+        return "Viaje incentivo que te la envia a la empresa "+atrEmpresa;
     }
 
     @Override
     public String cualquierMetodo2() {
-        return "Aquí devuelve cualquierMetodo2 en ViajeIncentivo";
+        return "Meétodo implementado en la clase hija viaje de incentivo";
     }
 
     

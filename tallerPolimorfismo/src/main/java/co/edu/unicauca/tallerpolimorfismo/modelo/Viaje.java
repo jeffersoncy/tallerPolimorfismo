@@ -100,11 +100,12 @@ public abstract class Viaje {
     
     public abstract String descripcion();
     
-    public String cualquierMetodo()
-    {
+    public String cualquierMetodo() {
         return "Cualquier método implementado en la clase base";
     }
     
-    public abstract String cualquierMetodo2();
+    public String cualquierMetodo2() {
+        return "Cualquier método2 implementado en la clase base";
+    }
     
 }

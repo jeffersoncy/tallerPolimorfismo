@@ -26,12 +26,7 @@ public class ViajeIndividual extends Viaje{
     @Override
     public String descripcion() 
     {
-        return "Aquí se devuelve la descripción para ViajeIndividual";
+        return "Disfruta tu viaje individual";
     }
     
-    @Override
-    public String cualquierMetodo2()
-    {
-        return "Aquí devuelve cualquierMetodo2 en ViajeIndividual";
-    }
 }

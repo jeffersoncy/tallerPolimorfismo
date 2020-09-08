@@ -30,7 +30,7 @@ public class ViajeFamiliar extends Viaje{
     @Override
     public String descripcion()
     {
-        return "Aquí devuelve la descripcion de ViajeFamiliar";
+        return "Viaje para disfrutar con toda tu familia";
     }
     
     public void setFamilia(int prmFamilia)
@@ -46,6 +46,6 @@ public class ViajeFamiliar extends Viaje{
     @Override
     public String cualquierMetodo2()
     {
-        return "Aquí devuelve cualquierMetodo2 en ViajeFamiliar";
+        return "Método implementado en la clase hija viaje familiar";
     }
 }

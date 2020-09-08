@@ -26,12 +26,6 @@ public class ViajeTodoIncluido extends Viaje{
     @Override
     public String descripcion()
     {
-        return "Aquí devuelve la descripcion de ViajeTodoIncluido";
-    }
-    
-    @Override
-    public String cualquierMetodo2()
-    {
-        return "Aquí devuelve cualquierMetodo2 en ViajeTodoIncluido";
+        return "Disfruta tu viaje todo incluido";
     }
 }
