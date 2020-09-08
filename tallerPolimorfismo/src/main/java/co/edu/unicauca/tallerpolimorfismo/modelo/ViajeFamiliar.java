@@ -9,11 +9,13 @@ import java.util.Date;
 
 /**
  *
- * @author Personal
+ * @author Jefferson Eduardo Campo, Fabian David Marín
  */
 public class ViajeFamiliar extends Viaje{
     
     /*ZONA declaracion */
+    
+    
     private int atrFamilia;
     
     public ViajeFamiliar(String prmOrigen, String prmLlegada, int prmCosto, Date prmFechaSalida, Date prmFechaLlegada, int prmFamilia)
