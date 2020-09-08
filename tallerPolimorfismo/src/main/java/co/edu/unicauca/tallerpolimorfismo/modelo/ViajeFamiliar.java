@@ -5,10 +5,38 @@
  */
 package co.edu.unicauca.tallerpolimorfismo.modelo;
 
+import java.util.Date;
+
 /**
  *
  * @author Personal
  */
-public class ViajeFamiliar {
+public class ViajeFamiliar extends Viaje{
     
+    /*ZONA declaracion */
+    private int atrFamilia;
+    
+    public ViajeFamiliar(String prmOrigen, String prmLlegada, int prmCosto, Date prmFechaSalida, Date prmFechaLlegada, int prmFamilia)
+    {}
+    
+    @Override
+    public String descripcion()
+    {
+        return "Aquí devuelve la descripcion";
+    }
+    
+    public void setFamilia(int prmFamilia)
+    {
+        atrFamilia = prmFamilia;
+    }
+    
+    public int getFamilia()
+    {
+        return atrFamilia;
+    }
+    
+    public String cualquierMetodo2()
+    {
+        return "Aquí devuelve cualquierMetodo2";
+    }
 }
