@@ -14,10 +14,17 @@ import java.util.Date;
 public class ViajeFamiliar extends Viaje{
     
     /*ZONA declaracion */
-    
-    
     private int atrFamilia;
     
+    /**
+     * Constructor Viaje Familiar que se deriva de clase Viaje
+     * @param prmOrigen
+     * @param prmLlegada
+     * @param prmCosto
+     * @param prmFechaSalida
+     * @param prmFechaLlegada
+     * @param prmFamilia
+     */
     public ViajeFamiliar(String prmOrigen, String prmLlegada, int prmCosto, Date prmFechaSalida, Date prmFechaLlegada, int prmFamilia)
     {
         super(prmOrigen, prmLlegada, prmCosto, prmFechaSalida, prmFechaLlegada);
@@ -35,11 +42,19 @@ public class ViajeFamiliar extends Viaje{
         return "Viaje para disfrutar con toda tu familia";
     }
     
+    /**
+     *  metodo modificador
+     * @param prmFamilia, se modifica el numero de la familia
+     */
     public void setFamilia(int prmFamilia)
     {
         atrFamilia = prmFamilia;
     }
     
+    /**
+     * metodo para obtener el valor
+     * @return se obtiene el numero de la familia
+     */
     public int getFamilia()
     {
         return atrFamilia;
