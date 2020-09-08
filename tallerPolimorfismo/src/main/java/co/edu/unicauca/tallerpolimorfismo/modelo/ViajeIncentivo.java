@@ -40,7 +40,7 @@ public class ViajeIncentivo extends Viaje {
     
     @Override
     public String descripcion() {
-        return "Viaje incentivo que te la envia a la empresa "+atrEmpresa;
+        return "Viaje incentivo que te envia la empresa "+atrEmpresa;
     }
 
     public String cualquierMetodo2() {
