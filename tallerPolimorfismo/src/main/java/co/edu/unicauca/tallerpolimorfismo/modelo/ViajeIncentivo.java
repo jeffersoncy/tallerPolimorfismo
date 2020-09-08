@@ -15,13 +15,13 @@ public class ViajeIncentivo extends Viaje {
     private String atrEmpresa;
     
     /**
-     *
-     * @param prmOrigen
-     * @param prmDestino
-     * @param prmCosto
-     * @param prmFechaSalida
-     * @param prmFechaLlegada
-     * @param prmEmpresa
+     * Constructor de Viaje Incentivo que hereda de la clase viaje
+     * @param prmOrigen parametro origen del viaje
+     * @param prmDestino parametro destino del viaje
+     * @param prmCosto parametro costo del viaje 
+     * @param prmFechaSalida parametro fecha de salida del viaje
+     * @param prmFechaLlegada parametro fecha de llegada del viaje
+     * @param prmEmpresa parametro tipo string, nombre de la empresa
      */
     public ViajeIncentivo(String prmOrigen, String prmDestino, int prmCosto, Date prmFechaSalida, Date prmFechaLlegada,String prmEmpresa){
         super(prmOrigen, prmDestino, prmCosto, prmFechaSalida, prmFechaLlegada);
