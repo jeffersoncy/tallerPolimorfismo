@@ -8,12 +8,12 @@ package co.edu.unicauca.tallerpolimorfismo.modelo;
 import java.util.Date;
 
 /**
- *
- * @author Personal
+ * Clase hija que hereda de una Clase Viaje
+ * @author Jefferson Eduardo Campo, Fabián David Marín
  */
 public class ViajeIncentivo extends Viaje {
     private String atrEmpresa;
-
+    
     public ViajeIncentivo(String prmOrigen, String prmDestino, int prmCosto, Date prmFechaSalida, Date prmFechaLlegada,String prmEmpresa){
         super(prmOrigen, prmDestino, prmCosto, prmFechaSalida, prmFechaLlegada);
         atrOrigen = prmOrigen;
@@ -38,11 +38,19 @@ public class ViajeIncentivo extends Viaje {
         this.atrEmpresa = atrEmpresa;
     }
     
+    /**
+     * Método que sobreescribe la descripción del tipo de viaje.
+     * @return 
+     */
     @Override
     public String descripcion() {
         return "Viaje incentivo que te envia la empresa "+atrEmpresa;
     }
 
+    /**
+     * 
+     * @return "Método implementado en la clase hija viaje incentivo"
+     */
     public String cualquierMetodo2() {
         return "Método implementado en la clase hija viaje de incentivo";
     }
